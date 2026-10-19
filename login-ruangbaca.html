@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Ruang Baca</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: #f5f6f7;
+        }
+
+        .navbar {
+            background-color: #198754;
+        }
+
+        .login-card {
+            max-width: 430px;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+        }
+
+        .login-footer {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ruang Baca</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bantuan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-10 col-md-7 col-lg-5">
+                <div class="card login-card mx-auto">
+                    <div class="card-body p-4">
+                        <h4 class="text-center fw-bold mb-1">
+                            Masuk ke Ruang Baca
+                        </h4>
+                        <p class="text-center text-secondary small mb-4">
+                            Temukan bacaan untuk hari ini.
+                        </p>
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="username" class="form-label">
+                                    Username
+                                </label>
+                                <input type="text" class="form-control"
+                                    id="username" placeholder="Masukkan username">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">
+                                    Password
+                                </label>
+                                <input type="password" class="form-control"
+                                    id="password" placeholder="Masukkan password">
+                            </div>
+
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox"
+                                    id="ingat">
+                                <label class="form-check-label" for="ingat">
+                                    Ingat saya
+                                </label>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-success w-100">
+                                Masuk
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="card-footer login-footer text-center py-3">
+                        <a href="#" class="link-success small">
+                            Lupa password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
